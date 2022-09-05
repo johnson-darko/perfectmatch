@@ -60,7 +60,7 @@
     <div class = "activity-card mb-3">
       <%= link_to user_path(user) do %>
       <div>
-        <img src="<%= cl_image_path user.photos.first.key%>" alt="">
+        <%= cl_image_path user.photos.first.key%>
       </div>
       <% end %>
       <div>
