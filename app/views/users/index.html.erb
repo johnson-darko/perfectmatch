@@ -9,7 +9,7 @@
     <% if user != current_user %>
       <div class = "activity-card mb-3">
         <%= link_to user_path(user), class: "link" do %>
-          <%= cl_image_path user.photos.first.key%>
+          <%= cl_image_tag (user.photos.first.key) ,height: 50, width:60, class: "avatar-large", alt: "avatar-large" %>
         <% end %>
         <div>
           <h5><%= user.first_name %></h5>
