@@ -14,10 +14,12 @@ Rails.application.routes.draw do
     collection do
       get :homepage
     end
+    # resources :matches, only: [ :index, :update, :create ] do
+    #   resources :chatrooms, only:[:create,:show ] do
+    #     resources :messages, only: :create
     resources :matches, only: [ :index, :update, :create ] do
-      resources :chatrooms, only:[:create,:show ] do
-        resources :messages, only: :create
-      end
+      resources :chatrooms, only:[:show ]
+
     end
   end
 end
