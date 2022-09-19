@@ -61,7 +61,7 @@
     <div class = "activity-card mb-3">
       <%= link_to user_path(user) do %>
       <div>
-        <%#= cl_image_path user.photos.first.key%>
+        <%= cl_image_tag (user.photos.first.key) ,height: 50, width:60, class: "avatar-large", alt: "avatar-large" %>
       </div>
       <% end %>
       <div>
