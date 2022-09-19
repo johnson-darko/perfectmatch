@@ -83,7 +83,7 @@
         <%= link_to user_path(user), class: "link" do %>
           <div class="cards">
           <% if user.photos.first %>
-            <div class="card-category card-category-homepage" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_tag (user.photos.first.key) ,height: 50, width:60, class: "avatar-large", alt: "avatar-large" %>')">
+            <div class="card-category card-category-homepage" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_tag (user.photos.first.key) ,height: 50, width:60, class: "avatar-large", alt: "avatar-large" %>')
           <% else %>
             <div class="card-category card-category-homepage" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_tag "avatarplace.png" %>')">
           <% end %>
